@@ -27,10 +27,13 @@ class App < Sinatra::Base
     "#{@word1} #{@word2} #{@word3} #{@word4} #{@word5}."
   end
   
-  get "/"
+  get "/:operation/:number1/:number2" do
+    @operation = params[:operation]
+    @number2 = params[:number1]
+    @number2 = params[:number2]  
+    
+    
+    
+  end
   
-  
-  
-  
-
 end
