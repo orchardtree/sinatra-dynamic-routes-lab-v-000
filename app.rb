@@ -29,11 +29,14 @@ class App < Sinatra::Base
   end
   
   get "/:operation/:number1/:number2" do
-    @operation = params[:operation].to_sym
+    @operation = params[:operation]
     @number1 = params[:number1].to_i
     @number2 = params[:number2].to_i
     #calc = self.send @operation, @number1, @number2
     binding.pry
+    case
+      if @operation == "add"
+    end
   end
   
 end
