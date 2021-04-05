@@ -2,7 +2,7 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
   # Write your code here!
-=begin
+
   get "/reversename/:name" do
     @name = params[:name]
     "#{@name.reverse}"
@@ -17,7 +17,7 @@ class App < Sinatra::Base
     @number = params[:number]
     @phrase = params[:phrase]
   end
-  
+=begin
   get '/say/:word1/:word2/:word3/:word4/:word5'
     @word1 = params[:word1]
     @word2 = params[:word2]
