@@ -1,4 +1,5 @@
 require_relative 'config/environment'
+require 'pry'
 
 class App < Sinatra::Base
   # Write your code here!
@@ -32,6 +33,7 @@ class App < Sinatra::Base
     @number1 = params[:number1].to_i
     @number2 = params[:number2].to_i
     calc = self.send @operation, @number1, @number2
+    binding.pry
   end
   
 end
