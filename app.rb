@@ -35,7 +35,11 @@ class App < Sinatra::Base
     #calc = self.send @operation, @number1, @number2
     binding.pry
     case
-      if @operation == "add"
+      @operation == "add"
+        
+      if @operation == "subtract"
+      if @operation == "multiply"
+      if @operation == "divide"
     end
   end
   
